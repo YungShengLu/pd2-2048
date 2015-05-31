@@ -1,0 +1,5 @@
+<RCC>
+<qresource prefix="/images">
+<file>num2048.png</file>
+</qresource>
+</RCC>
