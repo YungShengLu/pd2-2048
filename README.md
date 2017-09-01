@@ -1,6 +1,6 @@
 # Simple 2048
 
-License: IEEE
+[![License: IEEE](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 This project is a simple implementation of popular game 2048. In this project, I developed a new style, China dynasty, to enjoy this game.
 
@@ -15,14 +15,13 @@ This project is a simple implementation of popular game 2048. In this project, I
 	
 ## Installation
 
-* Compilaton 
-```bash
-$ make
-$ qmake
-```
+* Compilaton
+	```bash
+	$ make
+	$ qmake
+	```
 * Execution
-
-Execute the `project2.pro`
+	* Execute the `project2.pro`
 
 ---
-License: IEEE
+[![License: IEEE](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)[![License: IEEE](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
