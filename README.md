@@ -21,7 +21,8 @@ $ make
 $ qmake
 ```
 * Execution
-	Execute the project2.pro
+
+Execute the `project2.pro`
 
 ---
 License: IEEE
