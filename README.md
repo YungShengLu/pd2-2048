@@ -1,31 +1,35 @@
-# Simple 2048
+# 2048
 
-[![License: IEEE](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+This repository is a project in NCKU course "Program Design 2".
+
+---
+## Abstract
 
 This project is a simple implementation of popular game 2048. In this project, I developed a new style, China dynasty, to enjoy this game.
 
-## Structure	
+This repository is going to implement the popular game "2048" in C++ with Qt. Interestly, This project is developed a new style, China dynasty, to enjoy this game. Qt is a cross-platform application development framework written in C++ for desktop, embedded and mobile. Supported Platforms include Linux, OS X, Windows, VxWorks, QNX, Android, iOS, BlackBerry, Sailfish OS and others.
 
-01. Core
-- `Board.cpp` / `Game.cpp` / `Tile.cpp`
-02. Event Handling
-- `QGameover.cpp` / `QWinning.cpp` / `QGame.cpp`
-03. GUI
-- `QBoard.cpp` / `QTile.cpp` / `QHead.cpp` / `QHint.cpp`
-	
-## Installation
+> More information about [Qt](https://wiki.qt.io/About_Qt)
+
+* [How to install Qt IDE?](https://www.qt.io/qt-5-12?utm_campaign=Qt%205.12&utm_source=homepage-hero-banner)
+
+---
+## Execution
 
 * Compilaton
 	```bash
 	$ make
+	# OR
 	$ qmake
 	```
-* Execution
-	* Execute the `project2.pro`
-
-## Author
-
-* [Yung-Sheng Lu](http://github.com/yungshenglu)
+* Execute the file `project2.pro` in Qt IDE.
 
 ---
-[![License: IEEE](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+## Author
+
+* [David Lu](http://github.com/yungshenglu)
+
+---
+## License
+
+[GNU GENERAL PUBLIC LICENSE Version 3](LICENSE)
