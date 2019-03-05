@@ -1,7 +1,7 @@
 #include "Mainwindow.h"
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
-    QPixmap *pixmap = new QPixmap(":num2048.png");
+    QPixmap *pixmap = new QPixmap(":/img/num2048.png");
     QIcon *icon = new QIcon(*pixmap);
     setWindowIcon(*icon);
     setIconSize(QSize(pixmap->width(), pixmap->height()));
