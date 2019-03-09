@@ -1,11 +1,11 @@
-# 2048
+# Classic 2048
 
 This repository is a project in NCKU course "Program Design 2".
 
 ---
 ## Abstract
 
-This project is a simple implementation of popular game 2048. In this project, I developed a new style, China dynasty, to enjoy this game.
+This project is a simple implementation of popular game 2048. In addition, I also developed a new style, China dynasty, in this project.
 
 This repository is going to implement the popular game "2048" in C++ with Qt. Interestly, This project is developed a new style, China dynasty, to enjoy this game. Qt is a cross-platform application development framework written in C++ for desktop, embedded and mobile. Supported Platforms include Linux, OS X, Windows, VxWorks, QNX, Android, iOS, BlackBerry, Sailfish OS and others.
 
@@ -22,7 +22,17 @@ This repository is going to implement the popular game "2048" in C++ with Qt. In
 	# OR
 	$ qmake
 	```
-* Execute the file `project2.pro` in Qt IDE.
+* Execute the file `Classic2048.pro` in Qt IDE.
+
+---
+## Dependency
+
+* [Qt Creator 4.8.2](http://download.qt.io/official_releases/qt/5.12/5.12.1/qt-opensource-linux-x64-5.12.1.run.mirrorlist) - Based on Qt 5.12.1 (GCC 5.3.1 20160406 (Red Hat 5.3.1-6), 64 bit)
+
+---
+## Logs
+
+* MAR 09, 2019 - Build and test on [Qt Creator 4.8.2](http://download.qt.io/official_releases/qt/5.12/5.12.1/qt-opensource-linux-x64-5.12.1.run.mirrorlist)
 
 ---
 ## Author
