@@ -25,6 +25,8 @@ This project is a simple implementation of popular game 2048. In addition, I als
 ---
 ## Dependency
 
+> **NOTICE:** Make sure you have already installed the following packages if you are using Ubuntu Linux 14.04 LTS.
+
 * [Ubuntu Linux 14.04 LTS](http://releases.ubuntu.com/14.04/)
     * [Package: libgl1-mesa-dev (10.1.0-4ubuntu5)](https://packages.ubuntu.com/trusty/libgl1-mesa-dev)
 * [Qt Creator 4.8.2](http://download.qt.io/official_releases/qt/5.12/5.12.1/qt-opensource-linux-x64-5.12.1.run.mirrorlist) - Based on Qt 5.12.1 (GCC 5.3.1 20160406 (Red Hat 5.3.1-6), 64 bit)
