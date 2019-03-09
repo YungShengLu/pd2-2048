@@ -21,7 +21,6 @@ private:
     QLabel *title, *count;
     string line;
     int curr;
-
 };
 
 

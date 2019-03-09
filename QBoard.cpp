@@ -62,38 +62,34 @@ QBoard::QBoard(int version, int dimension, int target, QWidget *parent) : QWidge
 
 void QBoard::keyPressEvent(QKeyEvent *event) {
     switch (event->key()) {
-    case Qt::Key_Up:
-        game->playerMove(UP);
-        break;
-    case Qt::Key_Left:
-        game->playerMove(LEFT);
-        break;
-    case Qt::Key_Right:
-        game->playerMove(RIGHT);
-        break;
-    case Qt::Key_Down:
-        game->playerMove(DOWN);
-        break;
+        case Qt::Key_Up:
+            game->playerMove(UP);
+            break;
+        case Qt::Key_Left:
+            game->playerMove(LEFT);
+            break;
+        case Qt::Key_Right:
+            game->playerMove(RIGHT);
+            break;
+        case Qt::Key_Down:
+            game->playerMove(DOWN);
+            break;
     }
 }
 
 void QBoard::notify() {
     if (game->isGameOver())
         gameOver.show();
-
     if (game->isFinished())
         winning.show();
 
     QString getBest = best->getBest();
     int temp = getBest.toInt();
-
     if (game->isFinished()) {
         QString getCurr = score->getScore();
         int curr = getCurr.toInt();
-
         if (curr > temp)
             best->setBest(QString("%1").arg(curr));
-
         score->setScore(QString("%1").arg(game->getScore()));
     }
     else {
@@ -108,7 +104,6 @@ void QBoard::drawBoard(int version, int dimension) {
     delete board;
     board = new QGridLayout();
     board->setSizeConstraint(QLayout::SetFixedSize);
-
     for (int i = 0; i < game->getGameBoard()->getDimension(); i++) {
         for (int j = 0; j < game->getGameBoard()->getDimension(); j++) {
             delete playerBoard[i][j];
@@ -117,7 +112,6 @@ void QBoard::drawBoard(int version, int dimension) {
             playerBoard[i][j]->drawTile(version, dimension);
         }
     }
-
     mainLayout->addLayout(board, 2, 0, 1, 3);
 }
 

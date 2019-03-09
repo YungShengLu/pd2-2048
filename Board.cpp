@@ -8,7 +8,6 @@ using namespace std;
 Board::Board(int dimension) {
     lastPoints = 0;
     lastCollision = false;
-
     this->dimension = dimension;
     initialize();
 }
@@ -16,7 +15,6 @@ Board::Board(int dimension) {
 Board::Board(const Board &brd) {
     dimension = brd.dimension;
     initialize();
-
     for (int i = 0; i < dimension; i++) {
         for (int j = 0; j < dimension; j++) {
             if (brd.board[i][j] == NULL)
@@ -51,35 +49,34 @@ void Board::initialize() {
 
 void Board::move(DIRECTION direction) {
     Board pre_move_board(*this);
-
     lastCollision = false;
     lastPoints = 0;
 
     switch (direction) {
-    case UP:
-        for (int i = 0; i < dimension; i++) {
-            for (int j = 0; j < dimension; j++)
-                moveVertical(i, j, UP);
-        }
-        break;
-    case DOWN:
-        for (int i = dimension-1; i >= 0; i--) {
-            for (int j = 0; j < dimension; j++)
-                moveVertical(i, j, DOWN);
-        }
-        break;
-    case LEFT:
-        for (int i = 0; i < dimension; i++) {
-            for (int j = 0; j < dimension; j++)
-                moveHorizontal(i, j, LEFT);
-        }
-        break;
-    case RIGHT:
-        for (int i = 0; i < dimension; i++) {
-            for (int j = dimension-1; j >= 0; j--)
-                moveHorizontal(i, j, RIGHT);
-        }
-        break;
+        case UP:
+            for (int i = 0; i < dimension; i++) {
+                for (int j = 0; j < dimension; j++)
+                    moveVertical(i, j, UP);
+            }
+            break;
+        case DOWN:
+            for (int i = dimension-1; i >= 0; i--) {
+                for (int j = 0; j < dimension; j++)
+                    moveVertical(i, j, DOWN);
+            }
+            break;
+        case LEFT:
+            for (int i = 0; i < dimension; i++) {
+                for (int j = 0; j < dimension; j++)
+                    moveHorizontal(i, j, LEFT);
+            }
+            break;
+        case RIGHT:
+            for (int i = 0; i < dimension; i++) {
+                for (int j = dimension-1; j >= 0; j--)
+                    moveHorizontal(i, j, RIGHT);
+            }
+            break;
     }
 
     if (isChanged(pre_move_board)) {
@@ -93,7 +90,6 @@ void Board::move(DIRECTION direction) {
 void Board::reset() {
     lastPoints = 0;
     lastCollision = false;
-
     for (int i = 0; i < dimension ; i++) {
         for (int j = 0; j < dimension; j++) {
             delete board[i][j];
@@ -119,7 +115,6 @@ int Board::getPoints() const {
 
 QVector<int> Board::freePosition() {
     QVector<int> position;
-
     if (isFull()) {
         position.append(-1);
         position.append(-1);

@@ -9,9 +9,9 @@ QBest::QBest(QWidget *parent) : QWidget(parent) {
     QFont font1("Ubuntu", 16, QFont::Bold);
     title->setFont(font1);
 
-    ifstream fin("best", ios::in);
+    ifstream fin(":/output/best", ios::in);
     getline(fin, line);
-    curr = (int)line.at(0);
+    curr = (int)line[0];
 
     count = new QLabel(QString("%1").fromStdString(line));
     count->setAlignment(Qt::AlignCenter);
@@ -33,8 +33,7 @@ QString QBest::getBest() {
 
 void QBest::setBest(QString record) {
     int curr = record.toInt();
-    ofstream fout("best", ios::out);
+    ofstream fout(":/output/best", ios::out);
     fout << curr;
-
     count->setText(record);
 }

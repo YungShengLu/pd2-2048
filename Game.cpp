@@ -5,7 +5,7 @@
 Game::Game(int dimension, int target) {
     finish = target;
     score = 0;
-    ifstream fin("best", ios::in);
+    ifstream fin(":/output/best", ios::in);
     fin >> best;
     cout << best << endl;
     board = new Board(dimension);
@@ -18,13 +18,10 @@ Board* Game::getGameBoard() const {
 
 void Game::playerMove(DIRECTION dir) {
     board->move(dir);
-
     if (board->isCollision())
         score += board->getPoints();
-
     if (!board->isMovePossible())
         gameOver = true;
-
     notifyObs();
 }
 
@@ -39,7 +36,6 @@ int Game::getScore() const {
 }
 
 int Game::getBest() const {
-
     return best;
 }
 
@@ -57,6 +53,5 @@ bool Game::isFinished() const {
                 return true;
         }
     }
-
     return false;
 }
