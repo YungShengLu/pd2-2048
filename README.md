@@ -5,9 +5,7 @@ This repository is a project in NCKU course "Program Design 2".
 ---
 ## Abstract
 
-This project is a simple implementation of popular game 2048. In addition, I also developed a new style, China dynasty, in this project.
-
-This repository is going to implement the popular game "2048" in C++ with Qt. Interestly, This project is developed a new style, China dynasty, to enjoy this game. Qt is a cross-platform application development framework written in C++ for desktop, embedded and mobile. Supported Platforms include Linux, OS X, Windows, VxWorks, QNX, Android, iOS, BlackBerry, Sailfish OS and others.
+This project is a simple implementation of popular game 2048. In addition, I also developed a new style, China dynasty, in this project. Qt is a cross-platform application development framework written in C++ for desktop, embedded and mobile. Supported Platforms include Linux, OS X, Windows, VxWorks, QNX, Android, iOS, BlackBerry, Sailfish OS and others.
 
 > More information about [Qt](https://wiki.qt.io/About_Qt)
 
